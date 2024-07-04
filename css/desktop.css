@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+---------------------------
+Celular: de 320px até 600px
+Tablet: 601px até 768px
+Desktop: 769px até 1200px
+TV: acima de 1200px
+*/
+
+@media screen and (min-width: 769px) {
+    header {
+        font-size: 1.5em;
+    }
+    header img {
+        max-width: 108px;
+        max-height: 108px;
+        margin: -30px 15px;
+        padding-bottom: 20px; 
+    }
+    nav a {
+        padding: 10px;
+    }
+    nav a:hover {
+        margin: 3px 0;
+        transform: translate(-4px, -4px);
+        margin-bottom: 12px;
+    }
+    main {
+        min-width: 720px;
+        max-width: 1112px;
+    }
+    .course, .service {
+        flex: 1;
+    }
+    .links a {
+        margin: 5px 5px 0 0;
+    }
+}
