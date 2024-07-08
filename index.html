@@ -18,15 +18,17 @@
 <body>
     <header class="fixed-header">
         <div class="language-selector">
-            <select id="language-select">
+            <button id="toggle-theme" onclick="toggleTheme()" title="Dark / Light"><i class="fa fa-moon"></i> / <i
+                    class="fa fa-sun"></i></button>
+            <select id="language-select" title="Language">
                 <option value="pt-br"> Português</option>
                 <option value="en"> English</option>
                 <option value="es"> Español</option>
             </select>
         </div>
         <nav>
-            <img src="imagem/checkred128.png" alt="votologo">
-            <a href="#projects">PROJETOS</a></li>
+            <img src="imagem/checkred128.png" alt="votelogo">
+            <a href="#vote">VOTO</a></li>
             <a href="#development">DESENVOLVIMENTO</a></li>
             <a href="#activities">ATIVIDADES</a></li>
             <a href="#contacts">CONTATOS</a></li>
@@ -35,7 +37,7 @@
 
     <main>
         <img src="imagem/southamerica.jpg" alt="backmap" class="first-image">
-        <section class="whitesmoke"> <!-- Adicionar imagem de fundo -->
+        <section class="smoke"> <!-- Adicionar imagem de fundo -->
             <div>
                 <h1>PROPÓSITO DO SITE</h1>
                 <p>Este site tem como objetivo conscintizar os eleitores sobre a importância do voto. Baseado em
@@ -50,24 +52,52 @@
             </div>
         </section>
 
-        <section class="transparent">
+        <section class="transparent" id="vote">
             <div>
                 <h1>IMPORTÂNCIA DO VOTO</h1>
-                <h2>- Benefícios de uma sociedade democrática participativa -</h2>
-                <p><strong>Representação e inclusão:</strong> O voto permite que os cidadãos participem do processo
-                    democrático,
-                    seleccionando os representantes que darão voz às suas preocupações e interesses no governo. Desta
-                    forma, garante-se que os diversos pontos de vista e necessidades são tidos em conta na elaboração
-                    das políticas.</p>
-                <p><strong>Coesão social:</strong> Numa democracia participativa, o voto promove um sentimento de 
-                    pertença e de responsabilidade entre os cidadãos. Reforça a ideia de que todos têm um interesse na
-                    direção e nas decisões da sua sociedade, promovendo a coesão social e a unidade.</p>
-                <p>Os projetos são desenvolvidos com base em dados estatísticos e históricos, com o objetivo de fornecer
-                    informações relevantes para a escolha de candidatos.</p>
+                <ul>
+                    <li>
+                        <h2>Benefícios de uma sociedade democrática participativa 
+                            <span onclick="toggleContent(this)" class="show-more">
+                                Mostrar mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 1 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </span>
+                        </h2>
+                        <span class="hidden-content">
+                            <p><strong>Representação e Inclusão:</strong> O voto permite que os cidadãos participem do processo
+                                democrático, selecionando os representantes que darão voz às suas preocupações e interesses.
+                                Desta forma, garante-se que os diversos pontos de vista e necessidades sejam levados em consideração
+                                na elaboração das políticas públicas.</p>
+                            <p><strong>Coesão Social:</strong> Numa democracia participativa, o voto promove um sentimento de
+                                pertencimento e de responsabilidade entre os cidadãos. Reforça a ideia de que todos têm interesse na
+                                direção e nas decisões da sociedade, promovendo a coesão social e a unidade.</p>
+                            <p><strong>Responsabilidade:</strong> Os funcionários eleitos respondem aos eleitores. Ao
+                                participar regularmente nas eleições, os cidadãos responsabilizam os seus líderes pelas suas ações e
+                                decisões. Esta responsabilização é crucial para manter a confiança nas instituições governamentais.</p>
+                            <p><strong>Mudança Pacífica:</strong> A votação proporciona um meio pacífico para provocar mudanças e
+                                expressar insatisfação com as políticas ou líderes atuais. Reduz a probabilidade de agitação civil
+                                ou revolução violenta, oferecendo uma forma estruturada de resolver as queixas.</p>
+                        </span>
+                    </li>
+                    
+                    <h2>Impacto da votação na governança e na legislação</h2>
+                    <p><strong>Direção Política:</strong> O resultado das eleições determina a direção das políticas públicas e das leis. A votação influencia quais questões são priorizadas e como são abordadas pelas autoridades eleitas. Por exemplo, mudanças nas prioridades dos eleitores podem levar a mudanças nas regulamentações ambientais, nas políticas de saúde ou nas estratégias económicas.</p>
+                    <p><strong>Coesão social:</strong> Numa democracia participativa, o voto promove um sentimento de
+                        pertencimento e de responsabilidade entre os cidadãos. Reforça a ideia de que todos têm interesse na
+                        direção e nas decisões da sociedade, promovendo a coesão social e a unidade.</p>
+                    <p><strong>Responsabilidade:</strong> Os funcionários eleitos respondem aos eleitores. Ao
+                        participar regularmente nas eleições, os cidadãos responsabilizam os seus líderes pelas suas ações e
+                        decisões. Esta responsabilização é crucial para manter a confiança nas instituições governamentais.</p>
+                    <p><strong>Mudança pacífica:</strong> A votação proporciona um meio pacífico para provocar mudanças e
+                        expressar insatisfação com as políticas ou líderes atuais. Reduz a probabilidade de agitação civil
+                        ou revolução violenta, oferecendo uma forma estruturada de resolver as queixas.</p>
+                </ul>
             </div>
         </section>
 
-        <section class="whitesmoke">
+        <section class="smoke">
             <h1>DESENVOLVIMENTO</h1>
             <p>Os projetos são desenvolvidos com base em dados estatísticos e históricos, com o objetivo de fornecer
                 informações relevantes para a escolha de candidatos.</p>
@@ -87,7 +117,7 @@
                 informações relevantes para a escolha de candidatos.</p>
         </section>
 
-        <section class="whitesmoke">
+        <section class="smoke">
             <h1>CONTATOS</h1>
             <p>Os projetos são desenvolvidos com base em dados estatísticos e históricos, com o objetivo de fornecer
                 informações relevantes para a escolha de candidatos.</p>
@@ -114,7 +144,7 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="imagem/checkred256.png" alt="votologo">
+                <img src="imagem/checkred256.png" alt="votelogo">
             </div>
             <div>
                 <div class="title">
@@ -137,8 +167,14 @@
         <p id="footer-end">&copy; 2024 VOTOCONCIENCIA Ltda.</p>
     </footer>
 
+    <!-- Script for theme selector -->
+    <script src="js/theme.js"></script>
+
     <!-- Script for language selector -->
-    <script src="language.js"></script>
+    <script src="js/language.js"></script>
+
+    <!-- Script for details / more -->
+    <script src="js/details.js"></script>
 
     <!-- Script for social media icons -->
     <script src="https://kit.fontawesome.com/4ab08ea2b2.js" crossorigin="anonymous"></script>

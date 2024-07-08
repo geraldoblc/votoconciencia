@@ -19,7 +19,7 @@ TV: acima de 1200px
     --color3: #899C4E;
     --color4: #0D0D0D;
     --color5: #1F2421;
-    --color6: #929487;
+    --color6: #c2c4b7;
     --color7: #F5F5F5;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -56,6 +56,12 @@ header {
 header div {
     text-align: right;
     margin: 5px 10px 0 0;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 
 #language-select {
@@ -134,11 +140,15 @@ main a {
 }
 
 main a:hover {
-    font-style: italic;
+    color: var(--color1);
     border-bottom: 1px solid var(--color0);
 }
 
-.whitesmoke {  
+main ul li {
+    list-style-type: none;
+}
+
+.smoke {  
     background-color: rgba(245, 245, 245, 0.8);
     text-align: left;
 }
@@ -148,8 +158,29 @@ main a:hover {
     text-align: left;
 }
 
-.transparent p, .whitesmoke p {
+.transparent p, .smoke p {
     padding: 5px 25px 0 25px;
+}
+
+.hidden-content {
+    display: none; /* Oculta por padrão */
+}
+.show-more {
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    color: #007bff; /* Cor do link para mostrar que é interativo */
+}
+.show-more svg {
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+    margin-left: 5px; /* Espaçamento à esquerda do ícone */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a rotação */
+}
+.rotate-180 {
+    transform: rotate(180deg); /* Rotaciona o ícone em 180 graus */
+}
+.show-more:hover {
+    transition-duration: 0.25s;
+    color: black;
+    font-weight: bolder;
 }
 
 h1 {
@@ -256,4 +287,46 @@ footer {
     border-top: 1px solid var(--color0);
     color: var(--color0);
     font-weight: bold;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+header.dark-mode {
+    background-color: var(--color5);
+}
+
+header.dark-mode nav a {
+    color: var(--color6);
+}
+
+main.dark-mode .smoke {
+    background-color: rgba(010, 010, 010, 0.95);
+}
+
+main.dark-mode .transparent p {
+    background-color: rgba(010, 010, 010, 0.95);
+}
+
+main.dark-mode h1 {
+    background-color: var(--color5);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05); /* Para navegadores WebKit como Chrome e Safari */
+    text-stroke: 1px rgba(255, 255, 255, 0.05); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+}
+
+main.dark-mode h2 {
+    color: var(--color4);
+}
+
+footer.dark-mode h4 {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05); /* Para navegadores WebKit como Chrome e Safari */
+    text-stroke: 1px rgba(255, 255, 255, 0.05); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+}
+
+footer.dark-mode {
+    background-color: var(--color5);
 }
