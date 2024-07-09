@@ -97,7 +97,7 @@ nav a:hover {
 
 main {
     min-width: 320px;
-    max-width: 530px;
+    max-width: 600px;
     margin: auto;
     padding: 56px 0 0 0;
 }
@@ -160,27 +160,27 @@ main ul li {
 
 .transparent p, .smoke p {
     padding: 5px 25px 0 25px;
+    font-size: 1.1em;
 }
 
 .hidden-content {
     display: none; /* Oculta por padrão */
 }
+
 .show-more {
     cursor: pointer; /* Altera o cursor para indicar que é clicável */
-    color: #007bff; /* Cor do link para mostrar que é interativo */
+    color: var(--color5); /* Cor do link para mostrar que é interativo */
+    margin-left: auto; /* Empurra o ícone para a direita */
 }
-.show-more svg {
-    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
-    margin-left: 5px; /* Espaçamento à esquerda do ícone */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para a rotação */
-}
-.rotate-180 {
-    transform: rotate(180deg); /* Rotaciona o ícone em 180 graus */
-}
+
 .show-more:hover {
     transition-duration: 0.25s;
-    color: black;
-    font-weight: bolder;
+    color: var(--color7);
+}
+
+.show-more i {
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+    transition: transform 0.25s ease; /* Adiciona uma transição suave para a rotação */
 }
 
 h1 {
@@ -197,6 +197,8 @@ h1 {
 }
 
 h2 {
+    display: flex;
+    align-items: end; /* Alinha verticalmente o conteúdo */
     background-color: var(--color0);
     font-family: var(--fonte-title);
     color: var(--color7);
@@ -205,6 +207,16 @@ h2 {
     margin: 10px 0px;
     padding: 3px 25px 3px 25px;
     text-align: left;
+    max-width: 780px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    transition: border-radius 0.25s ease; /* Adiciona uma transição suave */
+}
+
+.h2-expanded {
+    max-width: 1120px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
@@ -320,6 +332,14 @@ main.dark-mode h1 {
 
 main.dark-mode h2 {
     color: var(--color4);
+}
+
+main.dark-mode span.show-more {
+    color: var(--color7); /* Cor do link para mostrar que é interativo */
+}
+
+main.dark-mode span.show-more:hover {
+    color: var(--color5);
 }
 
 footer.dark-mode h4 {

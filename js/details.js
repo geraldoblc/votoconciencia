@@ -1,14 +1,15 @@
 function toggleContent(element) {
     const hiddenContent = element.parentNode.nextElementSibling;
-    const icon = element.querySelector('svg');
+    const icon = element.querySelector('i');
+    const h2 = element.closest('h2');
 
     if (hiddenContent.classList.contains('hidden-content')) {
         hiddenContent.classList.remove('hidden-content');
-        element.textContent = 'Mostrar menos ';
-        icon.classList.add('rotate-180'); // Adiciona a classe para rotacionar 180 graus
+        icon.style.transform = 'rotate(180deg)';
+        h2.classList.add('h2-expanded');
     } else {
         hiddenContent.classList.add('hidden-content');
-        element.textContent = 'Mostrar mais ';
-        icon.classList.remove('rotate-180'); // Remove a classe para voltar à posição normal
+        icon.style.transform = 'rotate(0deg)';
+        h2.classList.remove('h2-expanded');
     }
 }

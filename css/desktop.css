@@ -8,7 +8,7 @@ Desktop: 769px até 1200px
 TV: acima de 1200px
 */
 
-@media screen and (min-width: 549px) {
+@media screen and (min-width: 600px) {
     header {
         font-size: 1.5em;
     }
