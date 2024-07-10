@@ -104,7 +104,7 @@ main {
 
 main img {
     position: fixed;
-    bottom: 0;
+    top: 82px;
     width: 100%;
     z-index: -1;
     min-height: 568px;
@@ -124,8 +124,9 @@ main div {
 main p {
     text-align: justify;
     text-indent: 30px;
-    line-height: 1.5em;
+    line-height: 1.3em;
     padding: 10px;
+    font-size: 1em;
 }
 
 main strong {
@@ -160,7 +161,6 @@ main ul li {
 
 .transparent p, .smoke p {
     padding: 5px 25px 0 25px;
-    font-size: 1.1em;
 }
 
 .hidden-content {
@@ -186,7 +186,7 @@ main ul li {
 h1 {
     font-family: var(--fonte-title);
     color: var(--color0);
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
     background-color: var(--color7);
     margin-bottom: 15px;
@@ -201,13 +201,14 @@ h2 {
     align-items: end; /* Alinha verticalmente o conteúdo */
     background-color: var(--color0);
     font-family: var(--fonte-title);
+    font-size: 1.05em;
     color: var(--color7);
     text-indent: 25px;
     font-weight: normal;
     margin: 10px 0px;
-    padding: 3px 25px 3px 25px;
+    padding: 2px 25px 2px 25px;
     text-align: left;
-    max-width: 780px;
+    max-width: 670px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
     transition: border-radius 0.25s ease; /* Adiciona uma transição suave */
@@ -224,7 +225,7 @@ h2 {
 h3 {
     font-family: var(--fonte-destaque);
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-align: center;
     font-weight: normal;
     color: var(--color0);
@@ -247,7 +248,7 @@ h4 {
     font-family: var(--fonte-title);
     color: var(--color0);
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-bottom: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
     text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */

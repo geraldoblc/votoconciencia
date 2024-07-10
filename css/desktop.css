@@ -28,6 +28,10 @@ TV: acima de 1200px
     main {
         max-width: 100%;
         padding: 88px 0 0 0;
+        font-size: 1.2em;
+    }
+    main img {
+        top: 114px
     }
     .course, .service {
         flex: 1;
