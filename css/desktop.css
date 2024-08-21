@@ -20,7 +20,7 @@ TV: acima de 1200px
         padding-bottom: 20px; 
     }
     nav a {
-        padding: 6px 6px 12px 6px;
+        padding: 6px 12px 12px 12px;
     }
     nav a:hover {
         margin-bottom: 5px;
@@ -38,5 +38,8 @@ TV: acima de 1200px
     }
     .links a {
         margin: 5px 5px 0 0;
+    }
+    .links i {
+        font-size: 1.6em;
     }
 }

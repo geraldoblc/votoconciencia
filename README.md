@@ -15,7 +15,7 @@ Estrutura Organizacional das Pautas:
 •	Competência e qualificações necessárias
 •	Compromisso com os valores democráticos e direitos humanos
 •	Transparência e prestação de contas
-----------------------------------
+
 4. Como Avaliar um Candidato:
 •	Histórico político e experiência
 •	Propostas de campanha e plataforma política
@@ -36,7 +36,7 @@ Estrutura Organizacional das Pautas:
 •	Guia para verificar a veracidade de informações sobre candidatos
 •	Modelos de questionários para entrevistar candidatos
 •	Links para fontes confiáveis de informação política e eleitoral
-
+-----------------------------------
 8. Testemunhos e Casos de Sucesso:
 •	Histórias de eleitores que impactaram positivamente suas comunidades através do voto consciente
 •	Exemplos de candidatos que exemplificam os critérios ideais discutidos no site
