@@ -21,7 +21,7 @@ TV: acima de 1200px
     --color3: #899C4E;
     --color4: #0D0D0D;
     --color5: #1F2421;
-    --color6: #c2c4b7;
+    --color6: #e2e4d7;
     --color7: #F5F5F5;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -49,7 +49,7 @@ body {
 }
 
 header {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: var(--color7);
     font-family: var(--fonte-destaque);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -61,10 +61,19 @@ header div {
     margin: 5px 10px 0 0;
 }
 
+select:hover {
+    background-color: var(--color6);
+}
+
 button {
     cursor: pointer;
     border-radius: 10px;
     margin-right: 5px;
+    padding: 1px;
+}
+
+button:hover {
+    background-color: var(--color6);
 }
 
 #language-select {
@@ -117,6 +126,7 @@ section {
     text-align: center;
     padding: 25px;
     margin: 25px 0;
+    scroll-margin-top: 100px;
 }
 
 main div {
@@ -273,7 +283,7 @@ footer {
 }
 
 .footer-content div {
-    flex: 1 1 32%; /* Each div will take up approximately 45% of the width */
+    flex: 1 1 48%; /* Each div will take up approximately 45% of the width */
     margin: 0;
 }
 
@@ -291,8 +301,8 @@ footer {
     margin: 5px;
 }
 
-#adress {
-    margin: 6px 0 12px 0;
+#socialmedia {
+    padding-top: 6px;
 }
 
 .links i {
@@ -327,11 +337,11 @@ header.dark-mode nav a {
 }
 
 main.dark-mode .smoke {
-    background-color: rgba(010, 010, 010, 0.95);
+    background-color: rgba(031, 036, 033, 0.9);
 }
 
 main.dark-mode .transparent p {
-    background-color: rgba(010, 010, 010, 0.95);
+    background-color: rgba(031, 036, 033, 0.9);
 }
 
 main.dark-mode h1 {
